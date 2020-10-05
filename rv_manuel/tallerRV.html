@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charsed="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Tarea #1 </title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-camera position="0 -3 5"></a-camera>
+
+        <a-assets>
+            <img id="texturaEsfera" src="assets/texturas/texturaCubo.jpg">
+            <img id="texturaPlano" src="assets/texturas/texturaPlano.jpg">
+            <img id="texturaSky" src="assets/texturas/texturaSky.jpg">
+        </a-assets>
+
+        <a-sky src="#texturaSky"></a-sky>
+        <a-light type="point" color="yellow" position="-1 -2 0"></a-light>
+        <a-light type="point" color="green" position="1 -2 0"></a-light>
+        <a-sphere src="#texturaEsfera" position="0 -4.5 0" rotation="0 0 0" scale="0.5 0.5 0.5" color="white"></a-sphere>
+        <a-plane src="#texturaPlano" position="0 -5 0" rotation="-90 0 0" width="5" height="5" color="blue"></a-plane>
+        
+    </a-scene>
+</body>
+</html>
